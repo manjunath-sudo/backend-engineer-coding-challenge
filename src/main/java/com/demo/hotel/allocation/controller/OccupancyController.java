@@ -3,18 +3,21 @@ package com.demo.hotel.allocation.controller;
 import com.demo.hotel.allocation.model.OccupancyRequest;
 import com.demo.hotel.allocation.model.OccupancyResponse;
 import com.demo.hotel.allocation.service.OccupancyService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.demo.hotel.allocation.service.OccupancyServiceImpl;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/occupancy")
 public class OccupancyController {
 
-    @Autowired
-    private OccupancyService service;
+    private final OccupancyService occupancyService;
+
+    public OccupancyController(OccupancyService service){
+        this.occupancyService=service;
+    }
 
     @PostMapping
-    public OccupancyResponse calculateOccupancy(@RequestBody OccupancyRequest request) {
-        return service.allocateSeat(request);
+    public OccupancyResponse calculateOccupancy(@RequestBody(required = true) OccupancyRequest request) {
+        return occupancyService.allocateSeat(request);
     }
 }

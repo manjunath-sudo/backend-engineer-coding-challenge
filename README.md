@@ -1,4 +1,7 @@
 # Backend Engineer Coding Challenge
+Git Repo : https://github.com/manjunath-sudo/backend-engineer-coding-challenge/tree/main/src/main/java/com/demo/hotel/allocation
+
+Make sure you have **Java 21** and **Maven** installed.
 
 ### Build & Run
 ```bash

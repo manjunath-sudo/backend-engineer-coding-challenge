@@ -4,3 +4,4 @@ com\demo\hotel\allocation\controller\OccupancyController.class
 com\demo\hotel\allocation\HotelRoomAllocationApplication.class
 com\demo\hotel\allocation\config\SwaggerUI.class
 com\demo\hotel\allocation\service\OccupancyService.class
+com\demo\hotel\allocation\service\OccupancyServiceImpl.class

@@ -2,7 +2,7 @@ package com.demo.hotel.allocation;
 
 import com.demo.hotel.allocation.model.OccupancyRequest;
 import com.demo.hotel.allocation.model.OccupancyResponse;
-import com.demo.hotel.allocation.service.OccupancyService;
+import com.demo.hotel.allocation.service.OccupancyServiceImpl;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class OccupancyServiceTest {
 
-    private final OccupancyService service = new OccupancyService();
+    private final OccupancyServiceImpl service = new OccupancyServiceImpl();
 
     @Test
     void testScenario1() {
