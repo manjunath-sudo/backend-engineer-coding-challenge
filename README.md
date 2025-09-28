@@ -3,6 +3,10 @@ Git Repo : https://github.com/manjunath-sudo/backend-engineer-coding-challenge/t
 
 Make sure you have **Java 21** and **Maven** installed.
 
+Swagger UI available at #http://localhost:8080/swagger-ui.html
+
+
+
 ### Build & Run
 ```bash
 ./run.sh

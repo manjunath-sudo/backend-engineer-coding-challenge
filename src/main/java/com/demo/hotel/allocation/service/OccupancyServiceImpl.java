@@ -3,6 +3,7 @@ package com.demo.hotel.allocation.service;
 import com.demo.hotel.allocation.model.OccupancyRequest;
 import com.demo.hotel.allocation.model.OccupancyResponse;
 import org.springframework.stereotype.Service;
+
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
@@ -11,8 +12,8 @@ import java.util.stream.Collectors;
 @Service
 public class OccupancyServiceImpl implements OccupancyService {
 
-    private static final int PREDICATE = 100 ;
-    private static final int INDEX_ZERO = 0 ;
+    private static final int PREDICATE = 100;
+    private static final int INDEX_ZERO = 0;
 
     @Override
     public OccupancyResponse allocateSeat(OccupancyRequest request) {
