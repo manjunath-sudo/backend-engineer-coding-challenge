@@ -65,8 +65,7 @@ public class OccupancyServiceImpl implements OccupancyService {
 
         int usageEconomy = allocatedEconomy.size();
         double revenueEconomy = sumList(allocatedEconomy);
-
-        return new OccupancyResponse(usagePremium, revenuePremium, usageEconomy, revenueEconomy);
+        return new OccupancyResponse(usagePremium, (int) Math.floor(revenuePremium), usageEconomy, revenueEconomy);
     }
 
     private double sumList(List<Double> list) {
